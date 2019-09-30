@@ -43,7 +43,7 @@ phpunit.phar
 /admin/web/robots.txt
 
 apidoc.json
-/doc
+#/doc
 /admin/closure-compiler
 /admin/assets.php
 /admin/*.jar
