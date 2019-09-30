@@ -646,13 +646,27 @@
             "optional": false,
             "field": "status",
             "description": "<p>Order status .</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "ticket_cnt",
+            "description": "<p>tickets in order .</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "amount",
+            "description": "<p>Order amount .</p>"
           }
         ]
       },
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "HTTP/1.1 200 OK\n{\n    \"id\": \"1\",\n    \"client_id\": \"1\",\n    \"status\": \"open\",\n}",
+          "content": "HTTP/1.1 200 OK\n{\n    \"id\": \"1\",\n    \"client_id\": \"1\",\n    \"status\": \"open\",\n    \"ticket_cnt\": \"0\",\n    \"amount\": \"0\",\n}",
           "type": "json"
         }
       ]

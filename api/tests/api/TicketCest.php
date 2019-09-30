@@ -43,5 +43,7 @@ class TicketCest
         $I->sendGET('/ticket');
         $I->seeResponseCodeIs(HttpCode::OK);
         $I->seeResponseIsJson();
+
+        $I->seeResponseJsonMatchesJsonPath('$..block_expired_at');
     }
 }

@@ -47,3 +47,4 @@ apidoc.json
 /admin/closure-compiler
 /admin/assets.php
 /admin/*.jar
+mysql

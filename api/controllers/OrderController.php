@@ -91,6 +91,8 @@ class OrderController extends ActiveController
      * @apiSuccess {Number} id Order unique ID.
      * @apiSuccess {Number} client_id  Client ID.
      * @apiSuccess {String} status  Order status .
+     * @apiSuccess {Number} ticket_cnt  tickets in order .
+     * @apiSuccess {Number} amount  Order amount .
      *
      * @apiSuccessExample Success-Response:
      *     HTTP/1.1 200 OK
@@ -98,6 +100,8 @@ class OrderController extends ActiveController
      *         "id": "1",
      *         "client_id": "1",
      *         "status": "open",
+     *         "ticket_cnt": "0",
+     *         "amount": "0",
      *     }
      *
      * @apiError OrderClosed  Order by this order_id is closed.
