@@ -1,0 +1,10 @@
+actor: ApiTester
+modules:
+    enabled:
+        - REST:
+              url: 'http://172.31.0.1:20080'
+              depends: PhpBrowser
+              part: Json
+        - \api\tests\Helper\Api
+        - Yii2:
+            part: [orm,fixtures]

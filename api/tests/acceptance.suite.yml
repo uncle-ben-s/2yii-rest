@@ -1,0 +1,11 @@
+class_name: acceptanceTester
+modules:
+  enabled:
+    - REST:
+        depends: PhpBrowser
+#        url: 'http://172.30.0.4:5000'
+        url: 'http://172.31.0.1:20080'
+        part: [json]
+    - Yii2:
+        part: [orm,fixtures]
+        entryScript: index-test.php
